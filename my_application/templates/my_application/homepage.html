@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<title>{{ title }}</title>-->
+    {% if title %}
+
+        <title>{{title}}</title>
+    {%else%}
+        <title>valoare generala</title>
+    {% endif %}
+</head>
+<body>
+    <h1>Bine ati venit!</h1>
+    <img src = "{% static "my_application/Mountains.png" %}" alt = "poza neincarcata">
+</body>
+</html>
